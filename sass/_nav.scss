@@ -1,0 +1,48 @@
+.navbar {
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 5rem 15rem 5rem 15rem;
+
+  @media only screen and (max-width: $bp-mobile) {
+    padding: 5rem 10rem;
+  }
+
+  &__title {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 3rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 5rem;
+    }
+  }
+
+  &__ul {
+    display: flex;
+  }
+
+  &__li {
+    margin: 0 2rem;
+
+    list-style-type: none;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-bottom: 1px solid white;
+    }
+
+    @media only screen and (max-width: $bp-mobile) {
+      display: none;
+    }
+  }
+
+  &__a {
+    color: white;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.8rem;
+    text-decoration: none;
+  }
+}

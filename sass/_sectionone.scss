@@ -1,0 +1,66 @@
+.sectionone {
+  &__div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    padding: 30rem 5rem 15rem 5rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+      display: block;
+      padding: 30rem 2rem 0rem 2rem;
+    }
+
+    &--img {
+      width: 250rem;
+      margin-left: 10rem;
+
+      @media only screen and (max-width: $bp-mobile) {
+        width: 75rem;
+        margin-left: 3rem;
+      }
+    }
+
+    &--interactive {
+      background: white;
+
+      padding: 5rem;
+
+      position: relative;
+      top: 10rem;
+      right: 15rem;
+
+      @media only screen and (max-width: $bp-mobile) {
+        top: 0rem;
+        right: 0rem;
+        text-align: center;
+      }
+
+      &--title {
+        font-family: 'Public Sans', sans-serif;
+        font-weight: lighter;
+        font-size: 3rem;
+        letter-spacing: 0.3rem;
+        margin-bottom: 2rem;
+
+        @media only screen and (max-width: $bp-mobile) {
+          font-size: 4rem;
+          width: 75rem;
+        }
+      }
+
+      &--description {
+        color: gray;
+        font-family: 'Public Sans', sans-serif;
+        font-size: 1.5rem;
+        line-height: 2;
+
+        @media only screen and (max-width: $bp-mobile) {
+          font-size: 3rem;
+          width: 70rem;
+        }
+      }
+    }
+  }
+}

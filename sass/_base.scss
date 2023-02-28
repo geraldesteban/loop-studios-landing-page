@@ -1,0 +1,45 @@
+// RESPONSIVE BREAKPOINTS
+$bp-tablet: 62.5em; // 1000px
+$bp-desktop: 85em; // 1360px
+$bp-mobile: 30em; // 480px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16 = 62.5% -> 1rem = 10px
+  scroll-behavior: smooth;
+
+  @media only screen and (max-width: $bp-tablet) {
+    font-size: 50%;
+  }
+}
+
+body {
+  background: url(/images/desktop/image-hero.jpg) no-repeat;
+}
+
+.title {
+  color: white;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 5rem;
+
+  margin-top: 9rem;
+  margin-left: 15rem;
+  padding: 3rem;
+  width: 32%;
+  border: 0.2rem solid white;
+
+  @media only screen and (max-width: $bp-mobile) {
+    width: 110%;
+    margin-left: 10rem;
+    font-size: 8.5rem;
+  }
+}

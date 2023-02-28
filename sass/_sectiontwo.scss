@@ -1,0 +1,93 @@
+.sectiontwo {
+  &__upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 8rem 15rem 8rem 15rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+      padding: 8rem 5rem 8rem 5rem;
+    }
+
+    &--title {
+      font-family: 'Public Sans', sans-serif;
+      font-weight: lighter;
+      font-size: 5rem;
+      letter-spacing: 1rem;
+
+      @media only screen and (max-width: $bp-mobile) {
+        position: relative;
+        left: 13rem;
+      }
+    }
+
+    &--desription {
+      font-family: 'Public Sans', sans-serif;
+    }
+
+    &--btn {
+      padding: 2rem 6rem;
+      background: none;
+      border: solid 2px black;
+      cursor: pointer;
+
+      font-family: 'Public Sans', sans-serif;
+      font-weight: bold;
+      letter-spacing: 1rem;
+
+      @media only screen and (max-width: $bp-mobile) {
+        display: none;
+      }
+    }
+  }
+
+  &__gallery {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 15rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+      display: block;
+      padding: 2rem 5rem;
+    }
+
+    &__img {
+      display: flex;
+      position: relative;
+
+      &--imgs {
+        display: flex;
+
+        @media only screen and (max-width: $bp-mobile) {
+          display: none;
+        }
+
+        &--two {
+          display: none;
+
+          @media only screen and (max-width: $bp-mobile) {
+            display: flex;
+            margin-bottom: 3rem;
+            height: 26rem;
+          }
+        }
+      }
+    }
+
+    &--text {
+      color: white;
+      font-family: 'Public Sans', sans-serif;
+      font-size: 4rem;
+      font-weight: lighter;
+
+      position: absolute;
+      left: 2rem;
+      bottom: 5rem;
+    }
+  }
+}
+
+span {
+  display: block;
+}

@@ -1,0 +1,94 @@
+.footer {
+  font-family: 'Public Sans', sans-serif;
+  background: black;
+  color: white;
+
+  padding: 4rem 15rem 4rem 15rem;
+
+  @media only screen and (max-width: $bp-mobile) {
+    width: 80rem;
+  }
+
+  &__one {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+      display: block;
+      text-align: center;
+    }
+
+    &--title {
+      font-size: 3rem;
+
+      @media only screen and (max-width: $bp-mobile) {
+        margin-bottom: 3rem;
+        font-size: 4rem;
+      }
+    }
+
+    &--ul {
+      display: flex;
+
+      @media only screen and (max-width: $bp-mobile) {
+        margin-left: 14rem;
+      }
+
+      &--li {
+        list-style: none;
+        margin: 0rem 0rem 2rem 2rem;
+
+        &--a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &__two {
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $bp-mobile) {
+      display: block;
+    }
+
+    &--text {
+      font-size: 1.5rem;
+
+      @media only screen and (max-width: $bp-mobile) {
+        text-align: center;
+        font-size: 2rem;
+      }
+    }
+
+    &--ul {
+      display: flex;
+
+      @media only screen and (max-width: $bp-mobile) {
+        display: block;
+        text-align: center;
+      }
+
+      &--li {
+        list-style-type: none;
+        margin: 0rem 2rem 0rem 0rem;
+
+        @media only screen and (max-width: $bp-mobile) {
+          margin: 0rem 2rem 3rem 0rem;
+        }
+
+        &--a {
+          color: white;
+          font-size: 1.8rem;
+          text-decoration: none;
+
+          @media only screen and (max-width: $bp-mobile) {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
